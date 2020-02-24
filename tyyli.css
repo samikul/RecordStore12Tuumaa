@@ -1,0 +1,388 @@
+/*  BREAKPOINTIT ALKAA */
+/*   näyttö <420px      */
+@media  only screen and (max-width:456px) {
+
+    body {background-color:rgb(241, 241, 241)}
+    nav li {list-style-type:none;
+            margin-top: 2px;
+            text-align: left;
+            display:block;}
+}
+/* näyttö >421px */
+@media only screen and (min-width:457px) {
+
+    body {
+        background-color: rgb(221, 221, 221);
+    }
+    .flex_container {
+        display: flex;
+    }
+    .flex_item {
+        flex:1; 
+        padding-right:10px; 
+        margin: 15px; 
+        justify-content: center;
+        display: flex;
+    }
+}
+/* näyttö >768px */
+@media only screen and (min-width:768px) {
+
+    body {background-color:white}
+    nav li {display: inline-block; 
+            /*list-style-position: outside;*/}
+    :root {background-color: white}
+    body {width: 80%;    
+        margin:auto;
+        background-color: rgb(241, 241, 241)}   
+    
+    .responsive {
+        width: 49.99999%;
+        margin: 1px 0px;
+  }
+}
+/* BREAKPOINTIT PÄÄTTYY */
+
+/* NAVIGOINTI ALKAA */
+.navigointi {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    background-color: rgb(211, 211, 211);
+}
+.logo {
+    display:flex;
+}
+.logo img {
+    max-height:100px;
+}
+.logo img:hover {
+    transform: scale(1.1);
+    transition: transform 1s ease;
+    
+}
+.navi-oikealla ul {
+    list-style-type: none;
+    padding-left: none;
+}
+.navi-oikealla > ul > li > a {
+    color: black;
+    padding: 10px;
+    background: transparent;
+    text-decoration: none;
+    display: inline-block;
+}
+.navi-oikealla > ul > li > a:hover {
+    color: white;
+    background: rgb(227,79,0);
+    border-radius: 44px;
+}
+@media screen and (min-width: 500px) {
+    .navi-oikealla > ul > li {
+        display: inline-block;
+        padding: 5px;
+    }
+} 
+/* NAVIGOINTI PÄÄTTYY */
+
+/* KUVAGALLERIA ALKAA */
+.kuvagalleria {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+.kuvagalleria a {
+    overflow:hidden;
+    margin: 3px;
+}
+.kuvagalleria img {
+    transition: transform 1s ease, opacity 1s ease;
+}
+.kuvagalleria img:hover {
+    opacity: 0.5;
+    transform: scale(1.5);
+}
+/* KUVAGALLERIA PÄÄTTYY */
+
+/* MEISTÄ -SIVUN KUVAT ALKAA*/
+.kuviameista {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.kuvameista {
+    max-width: 100%;
+}
+.kuvameista img {
+    max-width: 100%;
+}
+@media screen and (min-width: 500px) {
+    .kuvameista {
+        max-width: 50%;
+    }
+}
+@media screen and (min-width: 501px) {
+    .kuvameista {
+        max-width: 25%;
+    }
+}
+/* MEISTÄ -SIVUN KUVAT PÄÄTTYY */
+
+/* PIKKUKUVAT ALKAA */
+.pikkukuvat {
+    width: 30px;
+}
+.discogsikoni {
+    width:45px;
+}
+.someikonit {
+    width:25px;
+}
+/* PIKKUKUVAT PÄÄTTYY */
+.otayhteytta-item > ul > li > a {
+    
+}
+.otayhteytta-item > ul > li > a:hover {
+    opacity:0.5;
+}
+
+/* ETUSIVUN / OSTAMME FLEXIT ALKAA */
+.etusivu-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.etusivu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    padding: 1em;
+}
+@media screen and (min-width: 500px) {
+    .etusivu-item {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 800px) {
+    .etusivu-item {
+        width: 33.3%;
+    }
+}
+/*  ETUSIVUN / OSTAMME FLEXIT PÄÄTTYY */
+
+/* MEISTÄ FLEXIT ALKAA */
+.meista-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.meista-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    padding: 1em;
+}
+@media screen and (min-width: 500px) {
+    .meista-item {
+        width: 50%;
+    }
+}
+@media screen and (min-width: 800px) {
+    .meista-item {
+        width: 33.3%;
+    }
+}
+/* MEISTÄ FLEXIT PÄÄTTYY */
+
+/* OTAYHTEYTTÄ FLEXIT ALKAA */
+
+#somelista li {list-style-type:none}
+#somelista span {display:inline-block;
+            width: 3em;}
+
+.otayhteytta-item > ul > li {
+    list-style-type:none;
+   }
+.otayhteytta-item > ul {
+    padding-left:0;
+}
+
+.otayhteytta-container{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.otayhteytta-item {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    max-width:100%;
+    padding:1em;
+}
+
+@media screen and (min-width: 500px) {
+    .otayhteytta-item {
+        width: 100%;
+    }
+    .otayhteytta-item > ul > li > span {
+        
+    }
+}
+@media screen and (min-width: 800px) {
+    .otayhteytta-item {
+        width: 33.3%;
+    }
+}
+
+/* OTAYHTEYTTÄ FLEXIT PÄÄTTYY */
+
+
+#open li {list-style-type: none}
+#open span {display: inline-block;
+            width: 1em;
+        }
+
+body {
+    font-family: Karla, Industria, sans-serif;color:black;
+    font-size: 16px;
+}
+
+
+
+main {background-color: rgb(241, 241, 241)}
+
+/* GOOGLEMAPS ALKAA */
+iframe {width : 80%;
+margin-left:10%;
+margin-right: auto;
+margin-bottom: 10%}
+/* GOOGLEMAPS PÄÄTTYY */
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+/* OTSIKOINTI ALKAA */
+h1  { 
+    color: #e34f00;
+    text-align: center;
+    letter-spacing: 3px;
+}
+h2  {
+    color: rgb(227,79,0);
+    text-align: center;
+    letter-spacing: 2px;
+}
+h3  {
+    color: rgb(227,79,0);
+    text-align: center;
+    letter-spacing: 1,5px;
+}
+h4  {
+    color: rgb(227, 79, 0);
+    text-align: center;
+    letter-spacing: 1px;
+}
+h5  {
+    color: rgb(227,79,0);
+    text-align:center;
+    letter-spacing: 0.5px;
+}
+h6  {
+    color: rgb(227,79,0);
+    text-align:center;
+    letter-spacing: 0.5px;
+}
+/* OTSIKOINTI PÄÄTTYY */
+
+#more {display: none;}
+
+/* ETUSIVUN "LUE LISÄÄ" -BUTTON ALKAA */
+button {
+    background-color: rgb(241, 241, 241);
+    text-align: center;
+    display: inline-block;
+    font-size: 12px;
+    padding: 7px 7px;
+    color: black; 
+    border: 1px solid rgb(227,79,0);
+    border-radius: 4px;
+}
+button:hover {
+  background-color: rgb(227,79,0);
+    border: 1px solid rgb(227,79,0);
+    border-radius: 4px;
+  color: white;
+
+}
+/* ETUSIVUN "LUE LISÄÄ" -BUTTON PÄÄTTYY */
+
+/* FOOTER ALKAA */
+/* oikee taustaväri 211 211 211 */
+
+.footer-item ul {
+    list-style-type: none;
+    padding-left: none;
+}
+.footerpienet {
+    width:15px;
+}
+#footerkuva {
+    width:70px;
+    margin:auto;
+}
+#footerlista li {list-style-type:none;}
+#footerlista span {display:inline-block;
+            width: 3em;}
+
+#footerkorostus {color:red;}
+.footer-container {
+    background-color: rgb(211,211,211);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+.footer-item {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    max-width: 100%;
+    padding: 1em;
+}
+@media screen and (max-width: 400px) {
+    .footer-item {
+        max-width: 100%;
+    }
+}
+@media screen and (min-width: 401px) {
+    .footer-item {
+        max-width: 100%;
+    }
+}
+/* FOOTER PÄÄTTYY */
+
+.korostus {color: rgb(277, 79, 0)}
+
+#lista li {list-style-type: none}
+#lista span {display: inline-block;
+            width: 7em}
+
+/*
+
+#foot12tuumaa {text-align: left;
+                margin-left: 40px;
+                margin-top:20px}
+} */
+
+
